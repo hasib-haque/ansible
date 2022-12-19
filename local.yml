@@ -9,7 +9,12 @@
     - name: make sure xrdp is installed
       apt:
         name: xrdp
+
     - name: make sure mc is installed
       apt:
-        name: mc   
+        name: mc
+
+    - name: make sure mlocate is installed
+      apt:
+        name: mlocate    
       
