@@ -2,7 +2,7 @@
 - hosts: localhost
   become: yes
   tasks:
-    - name: Update apt cache and make sure Vim is installed
+    - name: Update apt cache and make sure htop is installed
       apt:
         name: htop
         update_cache: yes
