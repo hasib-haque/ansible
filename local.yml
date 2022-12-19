@@ -2,7 +2,14 @@
 - hosts: localhost
   become: yes
   tasks:
-    - name: Update apt cache and make sure htop is installed
+    - name:  make sure htop is installed
       apt:
         name: htop
-        update_cache: yes
+       
+    - name: make sure xrdp is installed
+      apt:
+        name: xrdp
+    - name: make sure mc is installed
+      apt:
+        name: mc   
+      
